@@ -57,7 +57,6 @@ body{
 
 .card{
     border: 1px solid black;
-    width: 200px;
     margin: 10px;
     background-color: #ececec;
     border-radius: 15px;
@@ -66,11 +65,16 @@ body{
 }
 
 .gifs{
-    height: 200px;
     margin: 5px;
 
 }
 
+a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-family: "Mulish" , sans-serif;
+}
 .userInfo{
     display: flex;
     text-align: left;
@@ -84,3 +88,24 @@ body{
     margin: 10px;
 }
 
+
+@media screen and (max-width: 800px) {
+
+    .header{
+        font-size: 30px;
+        width: 100%;
+    }
+    #srch, .btn-1{
+        padding: 2px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    #srch{
+        width: 200px;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
